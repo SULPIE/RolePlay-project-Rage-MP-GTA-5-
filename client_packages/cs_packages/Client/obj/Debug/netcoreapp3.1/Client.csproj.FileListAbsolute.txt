@@ -13,7 +13,6 @@ C:\gtaRAGEMP\server-files\client_packages\cs_packages\Client\bin\Debug\netcoreap
 C:\gtaRAGEMP\server-files\client_packages\cs_packages\Client\bin\Debug\netcoreapp3.1\MessagePack.dll
 C:\gtaRAGEMP\server-files\client_packages\cs_packages\Client\bin\Debug\netcoreapp3.1\NeoSmart.Hashing.dll
 C:\gtaRAGEMP\server-files\client_packages\cs_packages\Client\bin\Debug\netcoreapp3.1\xxHash.dll
-C:\gtaRAGEMP\server-files\client_packages\cs_packages\Client\bin\Debug\netcoreapp3.1\Microsoft.Bcl.AsyncInterfaces.dll
 C:\gtaRAGEMP\server-files\client_packages\cs_packages\Client\bin\Debug\netcoreapp3.1\MessagePack.Annotations.dll
 C:\gtaRAGEMP\server-files\client_packages\cs_packages\Client\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.resources.dll
 C:\gtaRAGEMP\server-files\client_packages\cs_packages\Client\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.resources.dll

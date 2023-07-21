@@ -1,0 +1,172 @@
+*
+{
+    margin: 0;
+    padding: 0%;
+}
+
+@font-face 
+{
+    font-family: "gta";
+    src: url("../fonts/gta.ttf");
+    
+}
+
+@font-face 
+{
+    font-family: "hero";
+    src: url("../fonts/hero.ttf");
+}
+
+.lines
+{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.topLine
+{
+    width: 100%;
+    height: 13vh;
+    background-color: #000000;
+}
+
+.bottomLine
+{
+    position: absolute;
+    bottom: 0vh;
+    width: 100%;
+    height: 13vh;
+    background-color: #000000;
+}
+
+.menu
+{
+    position: absolute;
+    bottom: 0vh;
+    top: 0vh;
+    left: 0vh;
+    right: 0vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title
+{
+    display: flex;
+    height: 6%;
+    width: 38%;
+    justify-content: center;
+    align-items: center;
+    background-color: #876900;
+    border-radius: 3vh 3vh 0 0;
+    font-family: gta;
+    font-size: max(5vh, 5vh);
+    color: #FFF;
+}
+
+.authText
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content
+{
+    display: flex;
+    height: 25%;
+    width: 38%;
+    background-color: #C1C1C1;
+    border-radius: 0 0 3vh 3vh;
+    align-items: center;
+    flex-direction: column;
+}
+
+.editMail
+{
+    display: flex;
+    width: 30vh;
+    height: 5vh;
+    margin-top: auto;
+    background-color: #F3E5E5;
+    align-items: center;
+    border-radius: 3vh;
+}
+
+.editPass
+{
+    display: flex;
+    width: 30vh;
+    height: 5vh;
+    margin-top: 1vh;
+    background-color: #F3E5E5;
+    align-items: center;
+    border-radius: 3vh;
+}
+
+.auth
+{
+    display: flex;
+    width: 30vh;
+    height: 5vh;
+    margin-top: auto;
+    margin-bottom: auto;
+    background-color: #006400;
+    border-radius: 3vh;
+    border: #FFF;
+    justify-content: center;
+    align-items: center;
+    font-family: gta;
+    font-size: max(3.3vh, 3.3vh);
+    color: #FFF;
+}
+
+.email
+{
+    width: 100vh;
+    border: #FFF;
+    margin-left: 2vh;
+    margin-right: 2vh;
+    outline: none;
+    font-family: hero;
+    font-size: max(2vh, 2vh);
+    background-color: #F3E5E5;
+}
+
+.pass
+{
+    width: 100vh;
+    border: #FFF;
+    margin-left: 2vh;
+    margin-right: 2vh;
+    outline: none;
+    font-family: hero;
+    font-size: max(2vh, 2vh);
+    background-color: #F3E5E5;
+}
+
+.alertError
+{
+    visibility:hidden;
+    position: absolute;
+    text-align: center;
+    max-width: 38%;
+    margin-top: 25%;
+    width:fit-content;
+    height:5vh;
+    display: flex;
+    background-color: #B03109;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 3vh;
+    font-family: hero;
+    font-size: max(2vh, 2vh);
+    text-align: center;
+    color: #FFF;
+    box-sizing: border-box;
+    padding: 20px;
+}

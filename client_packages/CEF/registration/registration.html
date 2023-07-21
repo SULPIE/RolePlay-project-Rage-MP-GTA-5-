@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="css/registration.css">
+
+<html>
+    <div class="lines">
+        <div class="topLine">
+        </div>
+        <div class="bottomLine">
+        </div>   
+    </div>
+
+    <div class="menu">
+        <div class="title">
+            <p1="authText">
+                Регистрация
+            </p1>
+        </div>
+        <div class="content">
+            <div class="editMail">
+                <input class="email" type="text" placeholder="Введите Email" id="textEmail" maxlength="64">
+            </div>
+            <div class="editPass">
+                <input class="pass" type="password" placeholder="Придумайте пароль" id="textPass" maxlength="24">
+            </div>
+            <div class="editPassReturn">
+                <input class="passReturn" type="password" placeholder="Повторите пароль" id="textPassReturn" maxlength="24">
+            </div>
+            <button class="auth" id="buttonAuth" onclick="true">
+                Далее
+            </button>
+        </div>
+        <div class="alertError" id="boxAlert">
+            <div class="alertText">
+                Ошибка!
+            </div>
+        </div>
+    </div>
+</html>
+
+<script src="scripts/reg.js"></script>

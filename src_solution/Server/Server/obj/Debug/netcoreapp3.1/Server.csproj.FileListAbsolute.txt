@@ -1,11 +1,11 @@
+C:\gtaRAGEMP\server-files\dotnet\resources\Server\Debug\netcoreapp3.1\Server.deps.json
+C:\gtaRAGEMP\server-files\dotnet\resources\Server\Debug\netcoreapp3.1\Server.dll
+C:\gtaRAGEMP\server-files\dotnet\resources\Server\Debug\netcoreapp3.1\Server.pdb
 C:\gtaRAGEMP\server-files\src_solution\Server\Server\obj\Debug\netcoreapp3.1\Server.csproj.AssemblyReference.cache
 C:\gtaRAGEMP\server-files\src_solution\Server\Server\obj\Debug\netcoreapp3.1\Server.GeneratedMSBuildEditorConfig.editorconfig
 C:\gtaRAGEMP\server-files\src_solution\Server\Server\obj\Debug\netcoreapp3.1\Server.AssemblyInfoInputs.cache
 C:\gtaRAGEMP\server-files\src_solution\Server\Server\obj\Debug\netcoreapp3.1\Server.AssemblyInfo.cs
 C:\gtaRAGEMP\server-files\src_solution\Server\Server\obj\Debug\netcoreapp3.1\Server.csproj.CoreCompileInputs.cache
-C:\gtaRAGEMP\server-files\dotnet\resources\Server\Debug\netcoreapp3.1\Server.deps.json
-C:\gtaRAGEMP\server-files\dotnet\resources\Server\Debug\netcoreapp3.1\Server.dll
-C:\gtaRAGEMP\server-files\dotnet\resources\Server\Debug\netcoreapp3.1\Server.pdb
+C:\gtaRAGEMP\server-files\src_solution\Server\Server\obj\Debug\netcoreapp3.1\Server.csproj.CopyComplete
 C:\gtaRAGEMP\server-files\src_solution\Server\Server\obj\Debug\netcoreapp3.1\Server.dll
 C:\gtaRAGEMP\server-files\src_solution\Server\Server\obj\Debug\netcoreapp3.1\Server.pdb
-C:\gtaRAGEMP\server-files\src_solution\Server\Server\obj\Debug\netcoreapp3.1\Server.csproj.CopyComplete

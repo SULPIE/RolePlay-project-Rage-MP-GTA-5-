@@ -1,17 +1,26 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
+	 <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
     <OutputType>Library</OutputType>
+	<CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
     <TargetFramework>netcoreapp3.1</TargetFramework>
+	 <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
     <PlatformTarget>x64</PlatformTarget>
     <BaseOutputPath>C:\gtaRAGEMP\server-files\dotnet\resources\Server</BaseOutputPath>
-	<CopyLocalLockFileAssebmblies>true</CopyLocalLockFileAssebmblies>
+	<CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
+	<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
   </PropertyGroup>
 
   <ItemGroup>
     <Reference Include="Bootstrapper">
       <HintPath>..\..\..\dotnet\runtime\Bootstrapper.dll</HintPath>
     </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MySql.Data" Version="8.1.0" />
+    <PackageReference Include="MySqlConnector" Version="2.3.0-beta.2" />
   </ItemGroup>
 
 </Project>

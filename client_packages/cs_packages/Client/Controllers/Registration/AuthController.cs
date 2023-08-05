@@ -1,4 +1,6 @@
-﻿using RAGE;
+﻿using Client.Controllers.CarShowRoom;
+using Client.Controllers.MainUI;
+using RAGE;
 using RAGE.Game;
 using RAGE.NUI;
 using RAGE.Ui;
@@ -11,18 +13,29 @@ namespace Client.Controllers.Registration
         private static HtmlWindow authWindow;
         private static int camera = 0;
 
-        public AuthController() 
+        public bool IsPlayerRegistered = false;
+
+        public AuthController(bool isPlayerRegistered)
         {
             Events.Add("CEF:CLIENT::ON_AUTH_BUTTON_CLICK", OnAuthButtonClick);
             Events.Add("SERVER:CLIENT::INVALID_LOGIN_DATA", OnUserTypeInvalidData);
             Events.Add("SERVER:CLIENT::CORRECT_LOGIN_DATA", OnUserLogon);
 
             DrawAuthUi();
+            IsPlayerRegistered = isPlayerRegistered;
         }
 
         private void OnUserLogon(object[] args)
         {
             DestroyAuthUi();
+
+            if (!IsPlayerRegistered)
+            {
+                StartSkinController startSkinController = new StartSkinController();
+            }
+
+            MainUIController mainUIController = new MainUIController();
+            ShowRoomController showRoomController = new ShowRoomController();
         }
 
         private void OnUserTypeInvalidData(object[] args)
@@ -42,6 +55,8 @@ namespace Client.Controllers.Registration
             camera = RAGE.Game.Cam.CreateCameraWithParams(RAGE.Game.Misc.GetHashKey("DEFAULT_SCRIPTED_CAMERA"), 636.32336f, 1254.177f, 346.7224f, 0f, 0f, 153.33537f, 70.0f, true, 2);
             RAGE.Game.Cam.SetCamActive(camera, true);
             RAGE.Game.Cam.RenderScriptCams(true, false, 0, true, false, 0);
+
+            //RAGE.Game.Ped.SetPedHeadBlendData(Player.PlayerPedId(), 44, 27, 0, 44, 2, 2, 1f, 1f, 0f, false);
         }
 
         private void DestroyAuthUi()

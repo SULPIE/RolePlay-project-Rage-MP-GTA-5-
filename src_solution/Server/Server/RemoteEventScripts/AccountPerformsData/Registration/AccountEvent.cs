@@ -5,11 +5,13 @@ using System;
 
 namespace Server.RemoteEventScripts.AccountPerformsData.Registration
 {
-    internal class Account : Script
+    internal class AccountEvent : Script
     {
         [RemoteEvent("CLIENT:SERVER::CREATE_ACCOUNT")]
-        public void Create(Player player, string email, string password)
+        public async void Create(Player player, string email, string password)
         {
+            //player.SetFaceFeature
+            //player.SetCustomization
             string select_query = "INSERT INTO users (name, password, email) VALUES (@name, @password, @email)";
 
             try
@@ -19,13 +21,13 @@ namespace Server.RemoteEventScripts.AccountPerformsData.Registration
                 command.Parameters.AddWithValue("@password", password);
                 command.Parameters.AddWithValue("@email", email);
 
-                Query.Execute(command);
+                await Query.Execute(command);
 
                 NAPI.Task.Run(() => NAPI.ClientEvent.TriggerClientEvent(player, "SERVER:CLIENT::ON_ACCOUNT_CREATE"));
             }
             catch(Exception ex) 
             {
-                NAPI.Util.ConsoleOutput(ex.ToString());
+                NAPI.Task.Run(() => NAPI.Util.ConsoleOutput(ex.ToString()));
             }
         }
     }

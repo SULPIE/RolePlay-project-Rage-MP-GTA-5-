@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "MxFxSYF4BmgdkF9+PMRkTCWXm2PtlVjEol80pGum2Pt6SwTHsPn/p8Quyp+V3Zbic0kuxGfzv8S29uUfM27cXQ==",
+  "dgSpecHash": "HPbb6PhQrzrhNbfaTfg+wQpt/Fcvvr6+0zGNYXAgAB+LQJ8WTVuBJlryTD/kVsJNYduywDA86jaW4J6F/mIRrg==",
   "success": true,
   "projectFilePath": "C:\\gtaRAGEMP\\server-files\\src_solution\\Server\\Server\\Server.csproj",
   "expectedPackageFiles": [
@@ -17,6 +17,7 @@
     "C:\\Users\\SULPIES\\.nuget\\packages\\mysqlconnector\\2.3.0-beta.2\\mysqlconnector.2.3.0-beta.2.nupkg.sha512",
     "C:\\Users\\SULPIES\\.nuget\\packages\\portable.bouncycastle\\1.9.0\\portable.bouncycastle.1.9.0.nupkg.sha512",
     "C:\\Users\\SULPIES\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
+    "C:\\Users\\SULPIES\\.nuget\\packages\\system.collections\\4.3.0\\system.collections.4.3.0.nupkg.sha512",
     "C:\\Users\\SULPIES\\.nuget\\packages\\system.configuration.configurationmanager\\4.4.1\\system.configuration.configurationmanager.4.4.1.nupkg.sha512",
     "C:\\Users\\SULPIES\\.nuget\\packages\\system.diagnostics.diagnosticsource\\7.0.2\\system.diagnostics.diagnosticsource.7.0.2.nupkg.sha512",
     "C:\\Users\\SULPIES\\.nuget\\packages\\system.drawing.common\\4.7.0\\system.drawing.common.4.7.0.nupkg.sha512",

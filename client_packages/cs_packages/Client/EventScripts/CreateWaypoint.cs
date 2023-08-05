@@ -5,7 +5,7 @@ namespace Client.EventScripts
 {
     internal class CreateWaypoint : Events.Script
     {
-        public CreateWaypoint() 
+        public CreateWaypoint()
         {
             Events.OnPlayerCreateWaypoint += OnPlayerCreateWaypoint;
         }

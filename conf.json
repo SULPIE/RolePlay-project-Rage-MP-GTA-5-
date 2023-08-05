@@ -1,9 +1,9 @@
 {
 	"maxplayers" : 100,
-	"name" : "freemode", 
+	"name" : "freemode",
 	"gamemode" : "freeroam", 
 	"stream-distance" : 300.0,
-	"announce" : false,
+	"announce" : true,
 	"csharp" : "enabled",
 	"port": 22005
 }

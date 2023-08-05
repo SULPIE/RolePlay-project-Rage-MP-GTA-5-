@@ -10,8 +10,11 @@ namespace Client.Controllers.Registration
 {
     internal class RegController
     {
+        private AuthController _authController;
+
         private static HtmlWindow authWindow;
         private static int camera = 0;
+        
 
         private static string _user_email;
         private static string _user_password;
@@ -65,13 +68,12 @@ namespace Client.Controllers.Registration
 
         public void  DestroyRegUi()
         {
-            Chat.Show(true);
-            Ui.DisplayRadar(true);
             authWindow.Destroy();
-            Cursor.ShowCursor(false, false);
 
             RAGE.Game.Cam.DestroyCam(camera, true);
             RAGE.Game.Cam.RenderScriptCams(false, false, 0, true, false, 0);
+
+            _authController = new AuthController(false);
         }
     }
 }

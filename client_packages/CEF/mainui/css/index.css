@@ -1,0 +1,79 @@
+*
+{
+    padding: 0;
+    margin: 0;
+}
+
+@font-face 
+{
+    font-family: "gta";
+    src: url("../fonts/gta.ttf");
+    
+}
+
+@font-face 
+{
+    font-family: "hero";
+    src: url("../fonts/hero.ttf");
+}
+
+.content
+{
+    display:flex;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    justify-content: right;
+    align-items: center;
+    background-size: 100%;
+}
+
+.money
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    position: absolute;
+    background: #006400;
+    margin-bottom: 70vh;
+    margin-right: 2vw;
+    border-radius: 3vh 3vh 3vh 3vh;
+    font-family: gta;
+    font-size: 4.5vh;
+    color: #F3E5E5;
+}
+
+.address
+{
+    display: flex;
+    position: absolute;
+    width: 17vw;
+    margin-right: 83vw;
+    justify-content: center;
+    align-items: center;
+    margin-top: 55vh;
+    height: fit-content;
+    font-family: gta;
+    font-size: 2.8vh;
+    color: #F3E5E5;
+    background: #006400;
+    border-radius: 0 0.5vh 0.5vh 0;
+}
+
+.shownmoney
+{
+    margin-left: 2vh;
+    margin-right: 2vh;
+    margin-top: 0.3vw;
+    margin-bottom: 0.3vw;
+    
+}
+
+.addresstext
+{
+    margin-left: 2vh;
+    margin-right: 2vh;
+    margin-top: 0.3vw;
+    margin-bottom: 0.3vw;
+}

@@ -1,17 +1,15 @@
 ﻿using GTANetworkAPI;
 using MySql.Data.MySqlClient;
 using System;
-using System.Collections.Generic;
 using System.Data;
 using System.Data.Common;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace Server.Data
 {
     public class Query
     {
-        public static void Execute(MySqlCommand command)
+        public static async Task Execute(MySqlCommand command)
         {
             using(MySqlConnection conn =  new MySqlConnection(ContextData.connection))
             {
@@ -19,9 +17,8 @@ namespace Server.Data
                 {
                     conn.Open();
                     command.Connection = conn;
-                    command.ExecuteNonQuery();
+                    await command.ExecuteNonQueryAsync();
                     conn.Close();
-
                 }
                 catch (Exception ex)
                 {

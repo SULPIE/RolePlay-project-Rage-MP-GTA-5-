@@ -107,6 +107,33 @@
     border-radius: 3vh;
 }
 
+.notify
+{
+    position: absolute;
+    display: flex;
+    margin-top: 25vh;
+    top: 0%;
+    bottom: auto;
+    background-color: #006400;
+    border-radius: 25vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.notif
+{
+    width: auto;
+    height: auto;
+    margin-left: 0.5vw;
+    margin-right: 0.5vw;
+    margin-bottom: 1vh;
+    margin-top: 1vh;
+    text-align: center;
+    font-family: hero;
+    font-size: 1.29vh;
+    color: #F3E5E5;
+}
+
 .auth
 {
     display: flex;
@@ -135,6 +162,7 @@
     font-size: max(2vh, 2vh);
     background-color: #F3E5E5;
 }
+
 
 .pass
 {

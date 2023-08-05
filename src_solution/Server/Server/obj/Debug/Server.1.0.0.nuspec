@@ -9,6 +9,7 @@
       <group targetFramework=".NETCoreApp3.1">
         <dependency id="MySql.Data" version="8.1.0" exclude="Build,Analyzers" />
         <dependency id="MySqlConnector" version="2.3.0-beta.2" exclude="Build,Analyzers" />
+        <dependency id="System.Collections" version="4.3.0" exclude="Build,Analyzers" />
       </group>
     </dependencies>
   </metadata>

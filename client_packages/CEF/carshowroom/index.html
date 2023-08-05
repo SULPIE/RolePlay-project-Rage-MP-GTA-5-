@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="css/index.css">
+
+<html>
+    <div class = "content" id="content">
+        <div class="choose_menu">
+            <button class="parents_button" id = "buttonChangePrev">
+                <p class ="button_text">
+                    кнопка N
+                </p>
+            </button>
+            <button class="face_params" id = "buttonChangeNext">
+                <p class ="button_text">
+                    кнопка M
+                </p>
+            </button>
+        </div>
+    </div>
+    <div class="params" id="params">
+        <div class="menu">
+            <div class="pheader">
+                <p>автосалон</p>
+            </div>
+            <div class="content_menu">
+                <div class="content_list">
+                    <p class = "desc">Модель</p>
+                    <p class="name" id = "carname">
+                        Kuruma
+                    </p>
+                </div>
+                <div class="content_list">
+                    <p class = "desc">Стоимость</p>
+                    <p class="name" id = "cost">
+                        10000$
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="tobuy">
+        Для того, чтобы купить, нажмите Enter<br>
+        Для смены цвета ↑ и ↓
+    </div>
+
+    <div class="tobuymenu" id = "confirmation">
+        <div class="mheader">
+            <p>подтверждение</p>
+        </div>
+        <div class="tobuymenu_content">
+            <p class = "info">Вы действительно хотите купить автомобиль <span class="colortext" id = "text_carname">Kuruma</span> за <span class="colortext" id="text_cost">10000</span>$?</p>
+            <div class="button_info">
+                <button class = "btn_yes">да</button>
+                <button class = "btn_no">нет</button>
+            </div>
+        </div>
+    </div>
+</html>
+
+<script src="scripts/parents.js"></script>

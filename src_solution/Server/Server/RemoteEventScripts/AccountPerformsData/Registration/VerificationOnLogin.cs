@@ -12,6 +12,8 @@ namespace Server.RemoteEventScripts.AccountPerformsData.Registration
         [RemoteEvent("CLIENT:SERVER::VERIFICATION_ON_LOGIN")]
         public async void OnLoginAccountVerification(Player player, string email, string password)
         {
+            if(AccountHandlerDictionary.GetAccount(player) != null) { return; }
+
             string select_query = "SELECT * FROM users WHERE name=@name AND email=@email AND password=@password";
 
             MySqlCommand command = new MySqlCommand(select_query);

@@ -1,5 +1,7 @@
 ﻿using Client.Controllers.CarShowRoom;
 using Client.Controllers.MainUI;
+using Client.Controllers.PlayerStateController;
+using Client.Managers;
 using RAGE;
 using RAGE.Game;
 using RAGE.NUI;
@@ -36,6 +38,7 @@ namespace Client.Controllers.Registration
 
             MainUIController mainUIController = new MainUIController();
             ShowRoomController showRoomController = new ShowRoomController();
+            SoundManager soundManager = new SoundManager();
         }
 
         private void OnUserTypeInvalidData(object[] args)

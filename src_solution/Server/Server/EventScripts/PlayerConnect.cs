@@ -7,6 +7,7 @@ namespace Server.EventScripts
         [ServerEvent(Event.PlayerConnected)]
         public void PlayerConnected(Player player)
         {
+            player.Dimension = player.Id;
         }
     }
 }

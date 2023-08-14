@@ -2,12 +2,13 @@
 using MySql.Data.MySqlClient;
 using Server.Data;
 using System;
+using System.Threading.Tasks;
 
 namespace Server.AccountInfo
 {
     public static class Update
     {
-        public static async void Data(Player player)
+        public static async Task Data(Player player)
         {
             string update_query = 
                 "UPDATE users SET `money`=@money, " +

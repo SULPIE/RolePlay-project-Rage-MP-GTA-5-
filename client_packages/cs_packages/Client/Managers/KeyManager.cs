@@ -14,6 +14,7 @@ namespace Client.Managers
         public const int KeyM = 0x4D;
         public const int KeyUp = 0x26;
         public const int KeyDown = 0x28;
+        public const int KeyEnter = 0x0D;
 
         public static void KeyBind(int key, Action action)
         {
@@ -23,6 +24,5 @@ namespace Client.Managers
             _keyStatus = false;
             System.Threading.Tasks.Task.Delay(ResetTime).ContinueWith((task) => { _keyStatus = true; });
         }
-
     }
 }

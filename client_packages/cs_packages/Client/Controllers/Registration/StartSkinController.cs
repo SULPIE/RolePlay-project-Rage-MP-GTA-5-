@@ -3,6 +3,7 @@ using RAGE.Elements;
 using RAGE.Game;
 using RAGE.Ui;
 using System;
+using System.Drawing;
 using static System.String;
 
 namespace Client.Controllers.Registration

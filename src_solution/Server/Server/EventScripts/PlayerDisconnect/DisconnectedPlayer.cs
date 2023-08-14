@@ -8,7 +8,9 @@ namespace Server.EventScripts.PlayerDisconnect
         [ServerEvent(Event.PlayerDisconnected)]
         public void OnPlayerDisconnect(Player player, DisconnectionType type, string reason)
         {
-            Update.Data(player);
+            if (AccountHandlerDictionary.GetAccount(player) == null) { return; }
+
+            _ = Update.Data(player);
 
             AccountHandlerDictionary.RemoveAccountFromDictionary(player);
         }

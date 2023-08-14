@@ -1,5 +1,6 @@
 ﻿using GTANetworkAPI;
 using Server.AccountInfo;
+using System.Threading;
 
 namespace Server.Vehicles.RentBikes
 {
@@ -28,6 +29,11 @@ namespace Server.Vehicles.RentBikes
             RentBikesDictionary.GetRentBike(player.Vehicle).Client = player;
             MoneyTransaction.TakeMoney(AccountHandlerDictionary.GetAccount(player), 50);
             AccountHandlerDictionary.GetAccount(player).IsPlayerRentingBike = true;
+
+            player.SetData<Vehicle>("player_renting_bike", player.Vehicle);
+
+            player.SendChatMessage("~g~[Велопарк]~w~:~w~Вы успешно арендовали велосипед");
+            NAPI.ClientEvent.TriggerClientEvent(player, "SERVER:CLIENT::PLAYER_VEHICLE_UNFREEZE");
         }
     }
 }

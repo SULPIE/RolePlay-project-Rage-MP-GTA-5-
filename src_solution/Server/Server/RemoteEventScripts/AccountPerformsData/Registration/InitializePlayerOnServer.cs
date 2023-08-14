@@ -19,7 +19,8 @@ namespace Server.RemoteEventScripts.AccountPerformsData.Registration
                 uint vhash = NAPI.Util.GetHashKey(account.Skin);
                 NAPI.Task.Run(() => {
                     player.SetSkin(vhash);
-                });
+                    player.Dimension = 0;
+                }, 500);
             }
         }
     }

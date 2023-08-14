@@ -16,7 +16,7 @@ namespace Server.EventScripts.ResourceStart
             Vector3 Position = new Vector3(453.45853f, -637.5926f, 28.499329f);
             Vector3 Rotation = new Vector3(0.0f, 0.0f, -103.42419f);
 
-            NAPI.Server.SetDefaultSpawnLocation(Position);
+            NAPI.Server.SetDefaultSpawnLocation(Position, Rotation.Z);
         }
     }
 }

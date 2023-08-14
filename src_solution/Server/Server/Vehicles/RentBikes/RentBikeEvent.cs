@@ -7,10 +7,6 @@ namespace Server.Vehicles.RentBikes
 {
     internal class RentBikeEvent : Script
     {
-        private Vehicle _vehicle = null;
-        private Player _player = null;
-
-        private Timer stateTimer = null;
 
         [ServerEvent(Event.PlayerEnterVehicle)]
         public void OnSitRentBike(Player player, Vehicle vehicle, sbyte seat)
@@ -20,8 +16,7 @@ namespace Server.Vehicles.RentBikes
                 return;
             }
 
-            _vehicle = vehicle;
-            _player = player;
+            Timer stateTimer = player.GetData<Timer>("player_rentbike_timer_exit");
 
             if(stateTimer != null && RentBikesDictionary.GetRentBike(vehicle).Client == player)
             {
@@ -39,12 +34,15 @@ namespace Server.Vehicles.RentBikes
             {
                 player.SendChatMessage("~g~[Велопарк]~w~:~w~Аренда велосипеда стоит ~r~50$");
                 player.SendChatMessage("~g~[Велопарк]~w~:~w~Чтобы арендовать, введите команду ~r~/rentbike");
+
+                NAPI.ClientEvent.TriggerClientEvent(player, "SERVER:CLIENT::PLAYER_VEHICLE_FREEZE");
             }
-            else
+            else if(rentBike.Client != player)
             {
                 player.SendChatMessage("~r~[Ошибка]~w~:Вы уже арендуете велосипед!");
+                player.WarpOutOfVehicle();
+                return;
             }
-
 
             if(rentBike.Client != null && rentBike.Client != player)
             {
@@ -57,29 +55,33 @@ namespace Server.Vehicles.RentBikes
         [ServerEvent(Event.PlayerExitVehicle)]
         public void OnExitRentBike(Player player, Vehicle vehicle)
         {
-            _vehicle = vehicle;
-            _player = player;
             if(RentBikesDictionary.GetRentBike(vehicle) != null && RentBikesDictionary.GetRentBike(vehicle).Client == player)
             {
                 player.SendChatMessage("~g~[Велопарк]~w~:У вас есть ~r~4 минуты~w~, чтобы сесть в свой велосипед!");
-                stateTimer = new Timer(ResetDeal, 0, 240000, 250);
+                Timer stateTimer = new Timer(ResetDeal, player, 9000, 250);
+                player.SetData<Timer>("player_rentbike_timer_exit", stateTimer);
             }
         }
 
         private void ResetDeal(object state)
         {
+            Player player = (Player)state;
+            Vehicle vehicle = player.GetData<Vehicle>("player_renting_bike");
+            Timer stateTimer = player.GetData<Timer>("player_rentbike_timer_exit");
+
             NAPI.Task.Run(() => {
-                _vehicle.Position = RentBikesDictionary.GetRentBike(_vehicle).Position;
-                _vehicle.Rotation = RentBikesDictionary.GetRentBike(_vehicle).Rotation;
-                _player.SendChatMessage("~g~[Велопарк]~w~:Ваш велосипед возвращен на базу!");
+                vehicle.Position = RentBikesDictionary.GetRentBike(vehicle).Position;
+                vehicle.Rotation = RentBikesDictionary.GetRentBike(vehicle).Rotation;
+                player.SendChatMessage("~g~[Велопарк]~w~:Ваш велосипед возвращен на базу!");
             });
+
             if (stateTimer != null)
             {
                 stateTimer.Dispose();
             }
 
-            RentBikesDictionary.GetRentBike(_vehicle).Client = null;
-            AccountHandlerDictionary.GetAccount(_player).IsPlayerRentingBike = false;
+            RentBikesDictionary.GetRentBike(vehicle).Client = null;
+            AccountHandlerDictionary.GetAccount(player).IsPlayerRentingBike = false;
         }
 
         [ServerEvent(Event.PlayerDisconnected)]
@@ -95,14 +97,12 @@ namespace Server.Vehicles.RentBikes
                 return;
             }
 
-            if(stateTimer != null)
-            {
-                stateTimer.Dispose();
-            }
+            Vehicle vehicle = player.GetData<Vehicle>("player_renting_bike");
+            if(vehicle == null) { return; }
 
-            _vehicle.Position = RentBikesDictionary.GetRentBike(_vehicle).Position;
-            _vehicle.Rotation = RentBikesDictionary.GetRentBike(_vehicle).Rotation;
-            RentBikesDictionary.GetRentBike(_vehicle).Client = null;
+            vehicle.Position = RentBikesDictionary.GetRentBike(vehicle).Position;
+            vehicle.Rotation = RentBikesDictionary.GetRentBike(vehicle).Rotation;
+            RentBikesDictionary.GetRentBike(vehicle).Client = null;
         }
     }
 }

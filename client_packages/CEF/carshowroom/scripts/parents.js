@@ -45,7 +45,18 @@ HideConfirmation()('CLIENT:CEF::HIDE_CONFIRMATION', () =>  {
     contentMenu.style.visibility = 'visible';
     paramsMenu.style.visibility = 'visible';
 })
-function HideConfirmation() {
+function HideConfirmation() 
+{
     return mp.events.add;
+}
+
+document.querySelector("#btn_confirm").onclick = function()
+{
+    mp.trigger("CEF:CLIENT::ON_CONFIRM_BUTTON_CLICK");
+}
+
+document.querySelector("#btn_cancel").onclick = function()
+{
+    mp.trigger("CEF:CLIENT::ON_CANCEL_BUTTON_CLICK");
 }
 

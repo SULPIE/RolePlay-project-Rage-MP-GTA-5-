@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="css/index.css">
+
+<html>
+    <div class="params" id="params">
+        <div class="menu">
+            <div class="pheader">
+                <p>Дом № <span class="colortext" id = "houseid">9999</span></p>
+            </div>
+            <div class="content_menu">
+                <div class="content_list">
+                    <p class = "desc">Класс</p>
+                    <p class="name" id = "house_type">
+                        Особняк
+                    </p>
+                </div>
+                <div class="content_list">
+                    <p class = "desc">Стоимость</p>
+                    <p class="name" id = "house_cost">
+                        10000$
+                    </p>
+                </div>
+                <div class="content_list">
+                    <p class = "desc">Владелец</p>
+                    <p class="name" id = "house_owner">
+                        RUDI_MIGOS
+                    </p>
+                </div>
+                <div class="content_list">
+                    <p class = "desc">Статус</p>
+                    <p class="name" id = "house_state">
+                        Куплен
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="tobuy" id="confirm_text">
+        Для взаимодействия нажмите Enter<br>
+    </div>
+
+    <div class="tobuymenu" id = "confirmation">
+        <div class="mheader">
+            <p>подтверждение</p>
+        </div>
+        <div class="tobuymenu_content">
+            <p class = "info">Вы действительно хотите купить дом <span class="colortext_confirm" id = "text_house_type">Особняк</span> за <span class="colortext_confirm" id="text_cost">10000</span>$?</p>
+            <div class="button_info">
+                <button class = "btn_yes" id="btn_confirm">да</button>
+                <button class = "btn_no" id="btn_cancel">нет</button>
+            </div>
+        </div>
+    </div>
+</html>
+
+<script src="scripts/parents.js"></script>

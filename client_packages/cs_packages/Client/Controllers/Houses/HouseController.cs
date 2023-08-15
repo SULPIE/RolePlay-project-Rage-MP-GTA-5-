@@ -17,6 +17,8 @@ namespace Client.Controllers.Houses
             Events.Add("SERVER:CLIENT::ON_PLAYER_BUY_HOUSE", OnPlayerTrynaBuyHouse);
             Events.Add("CEF:CLIENT::ON_CONFIRM_BUTTON_CLICK", OnPlayerClickConfirm);
             Events.Add("CEF:CLIENT::ON_CANCEL_BUTTON_CLICK", OnPlayerClickCancel);
+
+            _window.Active = false;
         }
 
         private void OnPlayerPickUpHousePickup(object[] args)
@@ -31,7 +33,7 @@ namespace Client.Controllers.Houses
         private void OnPlayerExitHousePickup(object[] args)
         {
             _window.Active = false;
-
+            Cursor.ShowCursor(false, false);
             Events.Tick -= PressKeyListener;
         }
 
@@ -53,6 +55,7 @@ namespace Client.Controllers.Houses
         {
             Cursor.ShowCursor(false, false);
             Events.CallRemote("CLIENT:SERVER::ON_PLAYER_CONFIRM_ON_BUY");
+            _window.Call("CLIENT:CEF::HIDE_CONFIRMATION");
         }
 
         private void OnPlayerClickCancel(object[] args)

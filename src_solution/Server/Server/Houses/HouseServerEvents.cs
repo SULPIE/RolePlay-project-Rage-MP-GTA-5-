@@ -17,10 +17,12 @@ namespace Server.Houses
         {
             House house = HousesHolder.GetHouse(colShape);
 
+            if(house == null) { return; }
+
             if (house.ColShapeEnter != colShape) { return; }
             if (AccountHandlerDictionary.GetAccount(player) == null) { return; }
 
-            string house_status = (house.Owner == null) ? "на продаже" : "куплен";
+            string house_status = (house.Owner == "null") ? "на продаже" : "куплен";
 
             NAPI.ClientEvent.TriggerClientEvent(player, "SERVER:CLIENT::ON_PLAYER_PICKUP_HOUSE_PICKUP", HouseTypesInfo.NameOfTypes[house.HouseType], house.HouseID.ToString(), house.Cost.ToString(), house.Owner, house_status);
             player.SetData<ColShape>("house_colshape_player_enter_in", colShape);
@@ -30,6 +32,8 @@ namespace Server.Houses
         public void OnPlayerExitHouseEnterColshape(ColShape colShape, Player player)
         {
             if (AccountHandlerDictionary.GetAccount(player) == null) { return; }
+
+            if (HousesHolder.GetHouse(colShape) == null) { return; }
 
             if (HousesHolder.GetHouse(colShape).ColShapeEnter == colShape)
             {
@@ -41,6 +45,8 @@ namespace Server.Houses
         public void OnPlayerEnterHouseExitColshape(ColShape colShape, Player player)
         {
             if (AccountHandlerDictionary.GetAccount(player) == null) { return; }
+
+            if (HousesHolder.GetHouse(colShape) == null) { return; }
 
             if (HousesHolder.GetHouse(colShape).ColShapeExit == colShape)
             {
@@ -61,7 +67,7 @@ namespace Server.Houses
             if (house.ColShapeEnter != colShape) { return; }
             if (house.Owner == null) { return; }
 
-            if(house.Owner == null)
+            if(house.Owner == "null")
             {
                 NAPI.ClientEvent.TriggerClientEvent(player, "SERVER:CLIENT::ON_PLAYER_BUY_HOUSE", house.Cost.ToString(), HouseTypesInfo.NameOfTypes[house.HouseType]);
             }
@@ -74,20 +80,28 @@ namespace Server.Houses
             }
         }
 
-        [RemoteEvent("ON_PLAYER_CONFIRM_ON_BUY")]
+        [RemoteEvent("CLIENT:SERVER::ON_PLAYER_CONFIRM_ON_BUY")]
         public void OnPlayerConfirmOnBuy(Player player)
         {
-            if(AccountHandlerDictionary.GetAccount(player) == null) { return; }
+            NAPI.ClientEvent.TriggerClientEvent(player, "SERVER:CLIENT::ON_PLAYER_EXIT_HOUSE_PICKUP");
+
+            if (AccountHandlerDictionary.GetAccount(player) == null) { return; }
 
             if (player.GetData<ColShape>("house_colshape_player_enter_in") == null) { return; }
             ColShape colShape = player.GetData<ColShape>("house_colshape_player_enter_in");
 
             House house = HousesHolder.GetHouse(colShape);
-            if(house.Owner != null) { return; }
+            if(house.Owner != "null") 
+            {
+                player.SendChatMessage("~r~[Ошибка]~w~:Дом уже куплен.");
+                NAPI.ClientEvent.TriggerClientEvent(player, "SERVER:CLIENT::ON_PLAYER_EXIT_HOUSE_PICKUP");
+                return; 
+            }
 
             if (AccountHandlerDictionary.GetAccount(player).Money < house.Cost)
             {
                 player.SendChatMessage("~r~[Ошибка]~w~:У вас недостаточно денег для покупки квартиры.");
+                NAPI.ClientEvent.TriggerClientEvent(player, "SERVER:CLIENT::ON_PLAYER_EXIT_HOUSE_PICKUP");
                 return;
             }
 
@@ -95,8 +109,6 @@ namespace Server.Houses
 
             player.SendChatMessage("Вы успешно приобрели дом " + HouseTypesInfo.NameOfTypes[house.HouseType]);
             house.Owner = player.Name;
-
-            NAPI.ClientEvent.TriggerClientEvent(player, "SERVER:CLIENT::ON_PLAYER_EXIT_HOUSE_PICKUP");
         }
     }
 }

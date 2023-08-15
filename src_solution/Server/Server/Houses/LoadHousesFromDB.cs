@@ -15,24 +15,25 @@ namespace Server.Houses
 
             if (dataTable.Rows.Count == 0) { return; }
 
-            for (int i = 0; i < dataTable.Rows.Count; i++)
+            NAPI.Task.Run(() =>
             {
-                House house = new House();
-                NAPI.Task.Run(() =>
+                for (int i = 0; i < dataTable.Rows.Count; i++)
                 {
+                    NAPI.Util.ConsoleOutput($"{i} домов загружено");
+                    House house = new House();
                     house.Init
                     (
                         dataTable.Rows[i].Field<int>("id"),
                         dataTable.Rows[i].Field<int>("type"),
-                        new Vector3(dataTable.Rows[i].Field<float>("posx"), dataTable.Rows[i].Field<float>("posy"), dataTable.Rows[i].Field<float>("poz")),
+                        new Vector3(dataTable.Rows[i].Field<float>("posx"), dataTable.Rows[i].Field<float>("posy"), dataTable.Rows[i].Field<float>("posz")),
                         HouseTypesInfo.HouseTypesInfoArray[dataTable.Rows[i].Field<int>("type"), (int)HouseTypesInfo.HouseInteriorPositions.PlayerPosition],
                         HouseTypesInfo.HouseTypesInfoArray[dataTable.Rows[i].Field<int>("type"), (int)HouseTypesInfo.HouseInteriorPositions.ExitPickup],
                         dataTable.Rows[i].Field<int>("dimension"),
                         dataTable.Rows[i].Field<int>("cost"),
                         dataTable.Rows[i].Field<string>("owner")
                     );
-                });
-            }
+                }
+            });
         }
     }
 }

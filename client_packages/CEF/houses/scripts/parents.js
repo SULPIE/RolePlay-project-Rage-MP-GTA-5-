@@ -37,6 +37,8 @@ ShowConfirmation()('CLIENT:CEF::SHOW_CONFIRMATION', (_cost, _type) =>  {
     params.style.visibility = 'hidden';
     confirmation_text.style.visibility = 'hidden';
 
+    confirmation.style.visibility = 'visible';
+
     house_type.style.textContent = _type;
     cost.style.textContent = _cost;
 })

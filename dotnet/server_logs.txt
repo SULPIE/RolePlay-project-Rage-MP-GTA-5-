@@ -12347,4 +12347,785 @@ MySql.Data.MySqlClient.MySqlException (0x80004005): Unable to connect to any of 
    at void System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
    at bool System.Net.Sockets.Socket.DoMultipleAddressConnectCallback(object result, MultipleAddressConnectAsyncResult context)
    at void System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw(Exception source)
-   at bool System.Net.Sockets.Socket.DoMultipleAddressConnectCallback(obj
+   at bool System.Net.Sockets.Socket.DoMultipleAddressConnectCallback(objInitializing Bootstrapper.dll (1.1.0.0)..
+-> SERVER STARTED AT 17.08.2023 12:55:53
+Unable to load acl.xml
+Loaded 667 entries from vehicleData.json
+Loading resources..
+-> Starting Server resource..
+Server: loading scripts.. found 1 script(s)
+Server: instantiating Server.Vehicles.RentBikes.InitRentBikes..
+Server: instantiating Server.Vehicles.RentBikes.RentBikeCommand..
+Server: instantiating Server.Vehicles.RentBikes.RentBikeEvent..
+Server: instantiating Server.Vehicles.PersonalVehicles.CommandParkVehicle..
+Server: instantiating Server.Vehicles.PersonalVehicles.PlayerEnterPersonalVehicle..
+Server: instantiating Server.ServerCommands.Car..
+Server: instantiating Server.ServerCommands.DataTest..
+Server: instantiating Server.ServerCommands.GetPos..
+Server: instantiating Server.ServerCommands.GiveMoney..
+Server: instantiating Server.ServerCommands.PersonCar..
+Server: instantiating Server.ServerCommands.PlayerPos..
+Server: instantiating Server.ServerCommands.TestPed..
+Server: instantiating Server.ServerCommands.WeaponCommand..
+Server: instantiating Server.RemoteEventScripts.CreateWaypoint..
+Server: instantiating Server.RemoteEventScripts.Pos..
+Server: instantiating Server.RemoteEventScripts.AccountPerformsData.Registration.AccountEvent..
+Server: instantiating Server.RemoteEventScripts.AccountPerformsData.Registration.CheckAccount..
+Server: instantiating Server.RemoteEventScripts.AccountPerformsData.Registration.ClientSkin..
+Server: instantiating Server.RemoteEventScripts.AccountPerformsData.Registration.VerificationEmail..
+Server: instantiating Server.RemoteEventScripts.AccountPerformsData.Registration.VerificationOnLogin..
+Server: instantiating Server.Houses.HouseCommand..
+Server: instantiating Server.Houses.HouseServerEvents..
+Server: instantiating Server.EventScripts.PlayerEnterVehicle..
+Server: instantiating Server.EventScripts.ResourceStart.Server..
+Server: instantiating Server.EventScripts.PlayerDisconnect.DisconnectedPlayer..
+Server: instantiating Server.ChatSystem.Core..
+Server: instantiating Server.ChatSystem.GlobalChat..
+Server: instantiating Server.CarShowRoom.ServerEvent..
+Server: loading server events.. found 1 server event(s)
+Server: loading server events.. found 3 server event(s)
+Server: loading server events.. found 1 server event(s)
+Server: loading server events.. found 4 server event(s)
+Server: loading server events.. found 1 server event(s)
+Server: loading server events.. found 1 server event(s)
+Server: loading server events.. found 1 server event(s)
+Server: loading server events.. found 1 server event(s)
+Server: loading server events.. found 1 server event(s)
+Server: loading server events.. found 3 server event(s)
+Server: loaded 17 server events(s)
+Server: loading commands.. found 1 command(s)
+Server: loading commands.. found 1 command(s)
+Server: loading commands.. found 1 command(s)
+Server: loading commands.. found 1 command(s)
+Server: loading commands.. found 1 command(s)
+Server: loading commands.. found 1 command(s)
+Server: loading commands.. found 1 command(s)
+Server: loading commands.. found 1 command(s)
+Server: loading commands.. found 1 command(s)
+Server: loading commands.. found 1 command(s)
+Server: loading commands.. found 1 command(s)
+Server: loaded 11 commands(s)
+Server: loading remote events.. found 1 remote event(s)
+Server: loading remote events.. found 1 remote event(s)
+Server: loading remote events.. found 1 remote event(s)
+Server: loading remote events.. found 1 remote event(s)
+Server: loading remote events.. found 1 remote event(s)
+Server: loading remote events.. found 1 remote event(s)
+Server: loading remote events.. found 1 remote event(s)
+Server: loading remote events.. found 2 remote event(s)
+Server: loading remote events.. found 3 remote event(s)
+Server: loaded 12 remote event(s)
+Велопарк в количестве 12 штук успешно загружен.
+Подключение к базе данных выполнено успешно
+Уличный автосалон загружен!
+-> Resource Server staInitializing Bootstrapper.dll (1.1.0.0)..
+-> SERVER STARTED AT 17.08.2023 12:56:43
+Unable to load acl.xml
+Loaded 667 entries from vehicleData.json
+Loading resources..
+-> Starting Server resource..
+Server: loading scripts.. found 1 script(s)
+Server: instantiating Server.Vehicles.RentBikes.InitRentBikes..
+Server: instantiating Server.Vehicles.RentBikes.RentBikeCommand..
+Server: instantiating Server.Vehicles.RentBikes.RentBikeEvent..
+Server: instantiating Server.Vehicles.PersonalVehicles.CommandParkVehicle..
+Server: instantiating Server.Vehicles.PersonalVehicles.PlayerEnterPersonalVehicle..
+Server: instantiating Server.ServerCommands.Car..
+Server: instantiating Server.ServerCommands.DataTest..
+Server: instantiating Server.ServerCommands.GetPos..
+Server: instantiating Server.ServerCommands.GiveMoney..
+Server: instantiating Server.ServerCommands.PersonCar..
+Server: instantiating Server.ServerCommands.PlayerPos..
+Server: instantiating Server.ServerCommands.TestPed..
+Server: instantiating Server.ServerCommands.WeaponCommand..
+Server: instantiating Server.RemoteEventScripts.CreateWaypoint..
+Server: instantiating Server.RemoteEventScripts.Pos..
+Server: instantiating Server.RemoteEventScripts.AccountPerformsData.Registration.AccountEvent..
+Server: instantiating Server.RemoteEventScripts.AccountPerformsData.Registration.CheckAccount..
+Server: instantiating Server.RemoteEventScripts.AccountPerformsData.Registration.ClientSkin..
+Server: instantiating Server.RemoteEventScripts.AccountPerformsData.Registration.VerificationEmail..
+Server: instantiating Server.RemoteEventScripts.AccountPerformsData.Registration.VerificationOnLogin..
+Server: instantiating Server.Houses.HouseCommand..
+Server: instantiating Server.Houses.HouseServerEvents..
+Server: instantiating Server.EventScripts.PlayerEnterVehicle..
+Server: instantiating Server.EventScripts.ResourceStart.Server..
+Server: instantiating Server.EventScripts.PlayerDisconnect.DisconnectedPlayer..
+Server: instantiating Server.ChatSystem.Core..
+Server: instantiating Server.ChatSystem.GlobalChat..
+Server: instantiating Server.CarShowRoom.ServerEvent..
+Server: loading server events.. found 1 server event(s)
+Server: loading server events.. found 3 server event(s)
+Server: loading server events.. found 1 server event(s)
+Server: loading server events.. found 4 server event(s)
+Server: loading server events.. found 1 server event(s)
+Server: loading server events.. found 1 server event(s)
+Server: loading server events.. found 1 server event(s)
+Server: loading server events.. found 1 server event(s)
+Server: loading server events.. found 1 server event(s)
+Server: loading server events.. found 3 server event(s)
+Server: loaded 17 server events(s)
+Server: loading commands.. found 1 command(s)
+Server: loading commands.. found 1 command(s)
+Server: loading commands.. found 1 command(s)
+Server: loading commands.. found 1 command(s)
+Server: loading commands.. found 1 command(s)
+Server: loading commands.. found 1 command(s)
+Server: loading commands.. found 1 command(s)
+Server: loading commands.. found 1 command(s)
+Server: loading commands.. found 1 command(s)
+Server: loading commands.. found 1 command(s)
+Server: loading commands.. found 1 command(s)
+Server: loaded 11 commands(s)
+Server: loading remote events.. found 1 remote event(s)
+Server: loading remote events.. found 1 remote event(s)
+Server: loading remote events.. found 1 remote event(s)
+Server: loading remote events.. found 1 remote event(s)
+Server: loading remote events.. found 1 remote event(s)
+Server: loading remote events.. found 1 remote event(s)
+Server: loading remote events.. found 1 remote event(s)
+Server: loading remote events.. found 2 remote event(s)
+Server: loading remote events.. found 3 remote event(s)
+Server: loaded 12 remote event(s)
+Велопарк в количестве 12 штук успешно загружен.
+Подключение к базе данных выполнено успешно
+Уличный автосалон загружен!
+-> Resource Server staInitializing Bootstrapper.dll (1.1.0.0)..
+-> SERVER STARTED AT 17.08.2023 12:56:58
+Unable to load acl.xml
+Loaded 667 entries from vehicleData.json
+Loading resources..
+-> Starting Server resource..
+Server: loading scripts.. found 1 script(s)
+Server: instantiating Server.Vehicles.RentBikes.InitRentBikes..
+Server: instantiating Server.Vehicles.RentBikes.RentBikeCommand..
+Server: instantiating Server.Vehicles.RentBikes.RentBikeEvent..
+Server: instantiating Server.Vehicles.PersonalVehicles.CommandParkVehicle..
+Server: instantiating Server.Vehicles.PersonalVehicles.PlayerEnterPersonalVehicle..
+Server: instantiating Server.ServerCommands.Car..
+Server: instantiating Server.ServerCommands.DataTest..
+Server: instantiating Server.ServerCommands.GetPos..
+Server: instantiating Server.ServerCommands.GiveMoney..
+Server: instantiating Server.ServerCommands.PersonCar..
+Server: instantiating Server.ServerCommands.PlayerPos..
+Server: instantiating Server.ServerCommands.TestPed..
+Server: instantiating Server.ServerCommands.WeaponCommand..
+Server: instantiating Server.RemoteEventScripts.CreateWaypoint..
+Server: instantiating Server.RemoteEventScripts.Pos..
+Server: instantiating Server.RemoteEventScripts.AccountPerformsData.Registration.AccountEvent..
+Server: instantiating Server.RemoteEventScripts.AccountPerformsData.Registration.CheckAccount..
+Server: instantiating Server.RemoteEventScripts.AccountPerformsData.Registration.ClientSkin..
+Server: instantiating Server.RemoteEventScripts.AccountPerformsData.Registration.VerificationEmail..
+Server: instantiating Server.RemoteEventScripts.AccountPerformsData.Registration.VerificationOnLogin..
+Server: instantiating Server.Houses.HouseCommand..
+Server: instantiating Server.Houses.HouseServerEvents..
+Server: instantiating Server.EventScripts.PlayerEnterVehicle..
+Server: instantiating Server.EventScripts.ResourceStart.Server..
+Server: instantiating Server.EventScripts.PlayerDisconnect.DisconnectedPlayer..
+Server: instantiating Server.ChatSystem.Core..
+Server: instantiating Server.ChatSystem.GlobalChat..
+Server: instantiating Server.CarShowRoom.ServerEvent..
+Server: loading server events.. found 1 server event(s)
+Server: loading server events.. found 3 server event(s)
+Server: loading server events.. found 1 server event(s)
+Server: loading server events.. found 4 server event(s)
+Server: loading server events.. found 1 server event(s)
+Server: loading server events.. found 1 server event(s)
+Server: loading server events.. found 1 server event(s)
+Server: loading server events.. found 1 server event(s)
+Server: loading server events.. found 1 server event(s)
+Server: loading server events.. found 3 server event(s)
+Server: loaded 17 server events(s)
+Server: loading commands.. found 1 command(s)
+Server: loading commands.. found 1 command(s)
+Server: loading commands.. found 1 command(s)
+Server: loading commands.. found 1 command(s)
+Server: loading commands.. found 1 command(s)
+Server: loading commands.. found 1 command(s)
+Server: loading commands.. found 1 command(s)
+Server: loading commands.. found 1 command(s)
+Server: loading commands.. found 1 command(s)
+Server: loading commands.. found 1 command(s)
+Server: loading commands.. found 1 command(s)
+Server: loaded 11 commands(s)
+Server: loading remote events.. found 1 remote event(s)
+Server: loading remote events.. found 1 remote event(s)
+Server: loading remote events.. found 1 remote event(s)
+Server: loading remote events.. found 1 remote event(s)
+Server: loading remote events.. found 1 remote event(s)
+Server: loading remote events.. found 1 remote event(s)
+Server: loading remote events.. found 1 remote event(s)
+Server: loading remote events.. found 2 remote event(s)
+Server: loading remote events.. found 3 remote event(s)
+Server: loaded 12 remote event(s)
+Велопарк в количестве 12 штук успешно загружен.
+Подключение к базе данных выполнено успешно
+Уличный автосалон загружен!
+-> Resource Server staInitializing Bootstrapper.dll (1.1.0.0)..
+-> SERVER STARTED AT 17.08.2023 12:57:44
+Unable to load acl.xml
+Loaded 667 entries from vehicleData.json
+Loading resources..
+-> Starting Server resource..
+Server: loading scripts.. found 1 script(s)
+Server: instantiating Server.Vehicles.RentBikes.InitRentBikes..
+Server: instantiating Server.Vehicles.RentBikes.RentBikeCommand..
+Server: instantiating Server.Vehicles.RentBikes.RentBikeEvent..
+Server: instantiating Server.Vehicles.PersonalVehicles.CommandParkVehicle..
+Server: instantiating Server.Vehicles.PersonalVehicles.PlayerEnterPersonalVehicle..
+Server: instantiating Server.ServerCommands.Car..
+Server: instantiating Server.ServerCommands.DataTest..
+Server: instantiating Server.ServerCommands.GetPos..
+Server: instantiating Server.ServerCommands.GiveMoney..
+Server: instantiating Server.ServerCommands.PersonCar..
+Server: instantiating Server.ServerCommands.PlayerPos..
+Server: instantiating Server.ServerCommands.TestPed..
+Server: instantiating Server.ServerCommands.WeaponCommand..
+Server: instantiating Server.RemoteEventScripts.CreateWaypoint..
+Server: instantiating Server.RemoteEventScripts.Pos..
+Server: instantiating Server.RemoteEventScripts.AccountPerformsData.Registration.AccountEvent..
+Server: instantiating Server.RemoteEventScripts.AccountPerformsData.Registration.CheckAccount..
+Server: instantiating Server.RemoteEventScripts.AccountPerformsData.Registration.ClientSkin..
+Server: instantiating Server.RemoteEventScripts.AccountPerformsData.Registration.VerificationEmail..
+Server: instantiating Server.RemoteEventScripts.AccountPerformsData.Registration.VerificationOnLogin..
+Server: instantiating Server.Houses.HouseCommand..
+Server: instantiating Server.Houses.HouseServerEvents..
+Server: instantiating Server.EventScripts.PlayerEnterVehicle..
+Server: instantiating Server.EventScripts.ResourceStart.Server..
+Server: instantiating Server.EventScripts.PlayerDisconnect.DisconnectedPlayer..
+Server: instantiating Server.ChatSystem.Core..
+Server: instantiating Server.ChatSystem.GlobalChat..
+Server: instantiating Server.CarShowRoom.ServerEvent..
+Server: loading server events.. found 1 server event(s)
+Server: loading server events.. found 3 server event(s)
+Server: loading server events.. found 1 server event(s)
+Server: loading server events.. found 4 server event(s)
+Server: loading server events.. found 1 server event(s)
+Server: loading server events.. found 1 server event(s)
+Server: loading server events.. found 1 server event(s)
+Server: loading server events.. found 1 server event(s)
+Server: loading server events.. found 1 server event(s)
+Server: loading server events.. found 3 server event(s)
+Server: loaded 17 server events(s)
+Server: loading commands.. found 1 command(s)
+Server: loading commands.. found 1 command(s)
+Server: loading commands.. found 1 command(s)
+Server: loading commands.. found 1 command(s)
+Server: loading commands.. found 1 command(s)
+Server: loading commands.. found 1 command(s)
+Server: loading commands.. found 1 command(s)
+Server: loading commands.. found 1 command(s)
+Server: loading commands.. found 1 command(s)
+Server: loading commands.. found 1 command(s)
+Server: loading commands.. found 1 command(s)
+Server: loaded 11 commands(s)
+Server: loading remote events.. found 1 remote event(s)
+Server: loading remote events.. found 1 remote event(s)
+Server: loading remote events.. found 1 remote event(s)
+Server: loading remote events.. found 1 remote event(s)
+Server: loading remote events.. found 1 remote event(s)
+Server: loading remote events.. found 1 remote event(s)
+Server: loading remote events.. found 1 remote event(s)
+Server: loading remote events.. found 2 remote event(s)
+Server: loading remote events.. found 3 remote event(s)
+Server: loaded 12 remote event(s)
+Велопарк в количестве 12 штук успешно загружен.
+Подключение к базе данных выполнено успешно
+Уличный автосалон загружен!
+-> Resource Server staInitializing Bootstrapper.dll (1.1.0.0)..
+-> SERVER STARTED AT 17.08.2023 13:00:20
+Unable to load acl.xml
+Loaded 667 entries from vehicleData.json
+Loading resources..
+-> Starting Server resource..
+Server: loading scripts.. found 1 script(s)
+Server: instantiating Server.Vehicles.RentBikes.InitRentBikes..
+Server: instantiating Server.Vehicles.RentBikes.RentBikeCommand..
+Server: instantiating Server.Vehicles.RentBikes.RentBikeEvent..
+Server: instantiating Server.Vehicles.PersonalVehicles.CommandParkVehicle..
+Server: instantiating Server.Vehicles.PersonalVehicles.PlayerEnterPersonalVehicle..
+Server: instantiating Server.ServerCommands.Car..
+Server: instantiating Server.ServerCommands.DataTest..
+Server: instantiating Server.ServerCommands.GetPos..
+Server: instantiating Server.ServerCommands.GiveMoney..
+Server: instantiating Server.ServerCommands.PersonCar..
+Server: instantiating Server.ServerCommands.PlayerPos..
+Server: instantiating Server.ServerCommands.TestPed..
+Server: instantiating Server.ServerCommands.WeaponCommand..
+Server: instantiating Server.RemoteEventScripts.CreateWaypoint..
+Server: instantiating Server.RemoteEventScripts.Pos..
+Server: instantiating Server.RemoteEventScripts.AccountPerformsData.Registration.AccountEvent..
+Server: instantiating Server.RemoteEventScripts.AccountPerformsData.Registration.CheckAccount..
+Server: instantiating Server.RemoteEventScripts.AccountPerformsData.Registration.ClientSkin..
+Server: instantiating Server.RemoteEventScripts.AccountPerformsData.Registration.VerificationEmail..
+Server: instantiating Server.RemoteEventScripts.AccountPerformsData.Registration.VerificationOnLogin..
+Server: instantiating Server.Houses.HouseCommand..
+Server: instantiating Server.Houses.HouseServerEvents..
+Server: instantiating Server.EventScripts.PlayerEnterVehicle..
+Server: instantiating Server.EventScripts.ResourceStart.Server..
+Server: instantiating Server.EventScripts.PlayerDisconnect.DisconnectedPlayer..
+Server: instantiating Server.ChatSystem.Core..
+Server: instantiating Server.ChatSystem.GlobalChat..
+Server: instantiating Server.CarShowRoom.ServerEvent..
+Server: loading server events.. found 1 server event(s)
+Server: loading server events.. found 3 server event(s)
+Server: loading server events.. found 1 server event(s)
+Server: loading server events.. found 4 server event(s)
+Server: loading server events.. found 1 server event(s)
+Server: loading server events.. found 1 server event(s)
+Server: loading server events.. found 1 server event(s)
+Server: loading server events.. found 1 server event(s)
+Server: loading server events.. found 1 server event(s)
+Server: loading server events.. found 3 server event(s)
+Server: loaded 17 server events(s)
+Server: loading commands.. found 1 command(s)
+Server: loading commands.. found 1 command(s)
+Server: loading commands.. found 1 command(s)
+Server: loading commands.. found 1 command(s)
+Server: loading commands.. found 1 command(s)
+Server: loading commands.. found 1 command(s)
+Server: loading commands.. found 1 command(s)
+Server: loading commands.. found 1 command(s)
+Server: loading commands.. found 1 command(s)
+Server: loading commands.. found 1 command(s)
+Server: loading commands.. found 1 command(s)
+Server: loaded 11 commands(s)
+Server: loading remote events.. found 1 remote event(s)
+Server: loading remote events.. found 1 remote event(s)
+Server: loading remote events.. found 1 remote event(s)
+Server: loading remote events.. found 1 remote event(s)
+Server: loading remote events.. found 1 remote event(s)
+Server: loading remote events.. found 1 remote event(s)
+Server: loading remote events.. found 1 remote event(s)
+Server: loading remote events.. found 2 remote event(s)
+Server: loading remote events.. found 3 remote event(s)
+Server: loaded 12 remote event(s)
+Велопарк в количестве 12 штук успешно загружен.
+Подключение к базе данных выполнено успешно
+Уличный автосалон загружен!
+-> Resource Server staInitializing Bootstrapper.dll (1.1.0.0)..
+-> SERVER STARTED AT 17.08.2023 13:02:25
+Unable to load acl.xml
+Loaded 667 entries from vehicleData.json
+Loading resources..
+-> Starting Server resource..
+Server: loading scripts.. found 1 script(s)
+Server: instantiating Server.Vehicles.RentBikes.InitRentBikes..
+Server: instantiating Server.Vehicles.RentBikes.RentBikeCommand..
+Server: instantiating Server.Vehicles.RentBikes.RentBikeEvent..
+Server: instantiating Server.Vehicles.PersonalVehicles.CommandParkVehicle..
+Server: instantiating Server.Vehicles.PersonalVehicles.PlayerEnterPersonalVehicle..
+Server: instantiating Server.ServerCommands.Car..
+Server: instantiating Server.ServerCommands.DataTest..
+Server: instantiating Server.ServerCommands.GetPos..
+Server: instantiating Server.ServerCommands.GiveMoney..
+Server: instantiating Server.ServerCommands.PersonCar..
+Server: instantiating Server.ServerCommands.PlayerPos..
+Server: instantiating Server.ServerCommands.TestPed..
+Server: instantiating Server.ServerCommands.WeaponCommand..
+Server: instantiating Server.RemoteEventScripts.CreateWaypoint..
+Server: instantiating Server.RemoteEventScripts.Pos..
+Server: instantiating Server.RemoteEventScripts.AccountPerformsData.Registration.AccountEvent..
+Server: instantiating Server.RemoteEventScripts.AccountPerformsData.Registration.CheckAccount..
+Server: instantiating Server.RemoteEventScripts.AccountPerformsData.Registration.ClientSkin..
+Server: instantiating Server.RemoteEventScripts.AccountPerformsData.Registration.VerificationEmail..
+Server: instantiating Server.RemoteEventScripts.AccountPerformsData.Registration.VerificationOnLogin..
+Server: instantiating Server.Houses.HouseCommand..
+Server: instantiating Server.Houses.HouseServerEvents..
+Server: instantiating Server.EventScripts.PlayerEnterVehicle..
+Server: instantiating Server.EventScripts.ResourceStart.Server..
+Server: instantiating Server.EventScripts.PlayerDisconnect.DisconnectedPlayer..
+Server: instantiating Server.ChatSystem.Core..
+Server: instantiating Server.ChatSystem.GlobalChat..
+Server: instantiating Server.CarShowRoom.ServerEvent..
+Server: loading server events.. found 1 server event(s)
+Server: loading server events.. found 3 server event(s)
+Server: loading server events.. found 1 server event(s)
+Server: loading server events.. found 4 server event(s)
+Server: loading server events.. found 1 server event(s)
+Server: loading server events.. found 1 server event(s)
+Server: loading server events.. found 1 server event(s)
+Server: loading server events.. found 1 server event(s)
+Server: loading server events.. found 1 server event(s)
+Server: loading server events.. found 3 server event(s)
+Server: loaded 17 server events(s)
+Server: loading commands.. found 1 command(s)
+Server: loading commands.. found 1 command(s)
+Server: loading commands.. found 1 command(s)
+Server: loading commands.. found 1 command(s)
+Server: loading commands.. found 1 command(s)
+Server: loading commands.. found 1 command(s)
+Server: loading commands.. found 1 command(s)
+Server: loading commands.. found 1 command(s)
+Server: loading commands.. found 1 command(s)
+Server: loading commands.. found 1 command(s)
+Server: loading commands.. found 1 command(s)
+Server: loaded 11 commands(s)
+Server: loading remote events.. found 1 remote event(s)
+Server: loading remote events.. found 1 remote event(s)
+Server: loading remote events.. found 1 remote event(s)
+Server: loading remote events.. found 1 remote event(s)
+Server: loading remote events.. found 1 remote event(s)
+Server: loading remote events.. found 1 remote event(s)
+Server: loading remote events.. found 1 remote event(s)
+Server: loading remote events.. found 2 remote event(s)
+Server: loading remote events.. found 3 remote event(s)
+Server: loaded 12 remote event(s)
+Велопарк в количестве 12 штук успешно загружен.
+Подключение к базе данных выполнено успешно
+Уличный автосалон загружен!
+-> Resource Server staInitializing Bootstrapper.dll (1.1.0.0)..
+-> SERVER STARTED AT 17.08.2023 13:04:39
+Unable to load acl.xml
+Loaded 667 entries from vehicleData.json
+Loading resources..
+-> Starting Server resource..
+Server: loading scripts.. found 1 script(s)
+Server: instantiating Server.Vehicles.RentBikes.InitRentBikes..
+Server: instantiating Server.Vehicles.RentBikes.RentBikeCommand..
+Server: instantiating Server.Vehicles.RentBikes.RentBikeEvent..
+Server: instantiating Server.Vehicles.PersonalVehicles.CommandParkVehicle..
+Server: instantiating Server.Vehicles.PersonalVehicles.PlayerEnterPersonalVehicle..
+Server: instantiating Server.ServerCommands.Car..
+Server: instantiating Server.ServerCommands.DataTest..
+Server: instantiating Server.ServerCommands.GetPos..
+Server: instantiating Server.ServerCommands.GiveMoney..
+Server: instantiating Server.ServerCommands.PersonCar..
+Server: instantiating Server.ServerCommands.PlayerPos..
+Server: instantiating Server.ServerCommands.TestPed..
+Server: instantiating Server.ServerCommands.WeaponCommand..
+Server: instantiating Server.RemoteEventScripts.CreateWaypoint..
+Server: instantiating Server.RemoteEventScripts.Pos..
+Server: instantiating Server.RemoteEventScripts.AccountPerformsData.Registration.AccountEvent..
+Server: instantiating Server.RemoteEventScripts.AccountPerformsData.Registration.CheckAccount..
+Server: instantiating Server.RemoteEventScripts.AccountPerformsData.Registration.ClientSkin..
+Server: instantiating Server.RemoteEventScripts.AccountPerformsData.Registration.VerificationEmail..
+Server: instantiating Server.RemoteEventScripts.AccountPerformsData.Registration.VerificationOnLogin..
+Server: instantiating Server.Houses.HouseCommand..
+Server: instantiating Server.Houses.HouseServerEvents..
+Server: instantiating Server.EventScripts.PlayerEnterVehicle..
+Server: instantiating Server.EventScripts.ResourceStart.Server..
+Server: instantiating Server.EventScripts.PlayerDisconnect.DisconnectedPlayer..
+Server: instantiating Server.ChatSystem.Core..
+Server: instantiating Server.ChatSystem.GlobalChat..
+Server: instantiating Server.CarShowRoom.ServerEvent..
+Server: loading server events.. found 1 server event(s)
+Server: loading server events.. found 3 server event(s)
+Server: loading server events.. found 1 server event(s)
+Server: loading server events.. found 4 server event(s)
+Server: loading server events.. found 1 server event(s)
+Server: loading server events.. found 1 server event(s)
+Server: loading server events.. found 1 server event(s)
+Server: loading server events.. found 1 server event(s)
+Server: loading server events.. found 1 server event(s)
+Server: loading server events.. found 3 server event(s)
+Server: loaded 17 server events(s)
+Server: loading commands.. found 1 command(s)
+Server: loading commands.. found 1 command(s)
+Server: loading commands.. found 1 command(s)
+Server: loading commands.. found 1 command(s)
+Server: loading commands.. found 1 command(s)
+Server: loading commands.. found 1 command(s)
+Server: loading commands.. found 1 command(s)
+Server: loading commands.. found 1 command(s)
+Server: loading commands.. found 1 command(s)
+Server: loading commands.. found 1 command(s)
+Server: loading commands.. found 1 command(s)
+Server: loaded 11 commands(s)
+Server: loading remote events.. found 1 remote event(s)
+Server: loading remote events.. found 1 remote event(s)
+Server: loading remote events.. found 1 remote event(s)
+Server: loading remote events.. found 1 remote event(s)
+Server: loading remote events.. found 1 remote event(s)
+Server: loading remote events.. found 1 remote event(s)
+Server: loading remote events.. found 1 remote event(s)
+Server: loading remote events.. found 2 remote event(s)
+Server: loading remote events.. found 3 remote event(s)
+Server: loaded 12 remote event(s)
+Велопарк в количестве 12 штук успешно загружен.
+Подключение к базе данных выполнено успешно
+Уличный автосалон загружен!
+-> Resource Server staInitializing Bootstrapper.dll (1.1.0.0)..
+-> SERVER STARTED AT 17.08.2023 13:06:29
+Unable to load acl.xml
+Loaded 667 entries from vehicleData.json
+Loading resources..
+-> Starting Server resource..
+Server: loading scripts.. found 1 script(s)
+Server: instantiating Server.Vehicles.RentBikes.InitRentBikes..
+Server: instantiating Server.Vehicles.RentBikes.RentBikeCommand..
+Server: instantiating Server.Vehicles.RentBikes.RentBikeEvent..
+Server: instantiating Server.Vehicles.PersonalVehicles.CommandParkVehicle..
+Server: instantiating Server.Vehicles.PersonalVehicles.PlayerEnterPersonalVehicle..
+Server: instantiating Server.ServerCommands.Car..
+Server: instantiating Server.ServerCommands.DataTest..
+Server: instantiating Server.ServerCommands.GetPos..
+Server: instantiating Server.ServerCommands.GiveMoney..
+Server: instantiating Server.ServerCommands.PersonCar..
+Server: instantiating Server.ServerCommands.PlayerPos..
+Server: instantiating Server.ServerCommands.TestPed..
+Server: instantiating Server.ServerCommands.WeaponCommand..
+Server: instantiating Server.RemoteEventScripts.CreateWaypoint..
+Server: instantiating Server.RemoteEventScripts.Pos..
+Server: instantiating Server.RemoteEventScripts.AccountPerformsData.Registration.AccountEvent..
+Server: instantiating Server.RemoteEventScripts.AccountPerformsData.Registration.CheckAccount..
+Server: instantiating Server.RemoteEventScripts.AccountPerformsData.Registration.ClientSkin..
+Server: instantiating Server.RemoteEventScripts.AccountPerformsData.Registration.VerificationEmail..
+Server: instantiating Server.RemoteEventScripts.AccountPerformsData.Registration.VerificationOnLogin..
+Server: instantiating Server.Houses.HouseCommand..
+Server: instantiating Server.Houses.HouseServerEvents..
+Server: instantiating Server.EventScripts.PlayerEnterVehicle..
+Server: instantiating Server.EventScripts.ResourceStart.Server..
+Server: instantiating Server.EventScripts.PlayerDisconnect.DisconnectedPlayer..
+Server: instantiating Server.ChatSystem.Core..
+Server: instantiating Server.ChatSystem.GlobalChat..
+Server: instantiating Server.CarShowRoom.ServerEvent..
+Server: loading server events.. found 1 server event(s)
+Server: loading server events.. found 3 server event(s)
+Server: loading server events.. found 1 server event(s)
+Server: loading server events.. found 4 server event(s)
+Server: loading server events.. found 1 server event(s)
+Server: loading server events.. found 1 server event(s)
+Server: loading server events.. found 1 server event(s)
+Server: loading server events.. found 1 server event(s)
+Server: loading server events.. found 1 server event(s)
+Server: loading server events.. found 3 server event(s)
+Server: loaded 17 server events(s)
+Server: loading commands.. found 1 command(s)
+Server: loading commands.. found 1 command(s)
+Server: loading commands.. found 1 command(s)
+Server: loading commands.. found 1 command(s)
+Server: loading commands.. found 1 command(s)
+Server: loading commands.. found 1 command(s)
+Server: loading commands.. found 1 command(s)
+Server: loading commands.. found 1 command(s)
+Server: loading commands.. found 1 command(s)
+Server: loading commands.. found 1 command(s)
+Server: loading commands.. found 1 command(s)
+Server: loaded 11 commands(s)
+Server: loading remote events.. found 1 remote event(s)
+Server: loading remote events.. found 1 remote event(s)
+Server: loading remote events.. found 1 remote event(s)
+Server: loading remote events.. found 1 remote event(s)
+Server: loading remote events.. found 1 remote event(s)
+Server: loading remote events.. found 1 remote event(s)
+Server: loading remote events.. found 1 remote event(s)
+Server: loading remote events.. found 2 remote event(s)
+Server: loading remote events.. found 3 remote event(s)
+Server: loaded 12 remote event(s)
+Велопарк в количестве 12 штук успешно загружен.
+Подключение к базе данных выполнено успешно
+Уличный автосалон загружен!
+-> Resource Server staInitializing Bootstrapper.dll (1.1.0.0)..
+-> SERVER STARTED AT 17.08.2023 14:10:50
+Unable to load acl.xml
+Loaded 667 entries from vehicleData.json
+Loading resources..
+-> Starting Server resource..
+Server: loading scripts.. found 1 script(s)
+Server: instantiating Server.Vehicles.RentBikes.InitRentBikes..
+Server: instantiating Server.Vehicles.RentBikes.RentBikeCommand..
+Server: instantiating Server.Vehicles.RentBikes.RentBikeEvent..
+Server: instantiating Server.Vehicles.PersonalVehicles.CommandParkVehicle..
+Server: instantiating Server.Vehicles.PersonalVehicles.PlayerEnterPersonalVehicle..
+Server: instantiating Server.ServerCommands.Car..
+Server: instantiating Server.ServerCommands.DataTest..
+Server: instantiating Server.ServerCommands.GetPos..
+Server: instantiating Server.ServerCommands.GiveMoney..
+Server: instantiating Server.ServerCommands.PersonCar..
+Server: instantiating Server.ServerCommands.PlayerPos..
+Server: instantiating Server.ServerCommands.TestPed..
+Server: instantiating Server.ServerCommands.WeaponCommand..
+Server: instantiating Server.RemoteEventScripts.CreateWaypoint..
+Server: instantiating Server.RemoteEventScripts.Pos..
+Server: instantiating Server.RemoteEventScripts.AccountPerformsData.Registration.AccountEvent..
+Server: instantiating Server.RemoteEventScripts.AccountPerformsData.Registration.CheckAccount..
+Server: instantiating Server.RemoteEventScripts.AccountPerformsData.Registration.ClientSkin..
+Server: instantiating Server.RemoteEventScripts.AccountPerformsData.Registration.VerificationEmail..
+Server: instantiating Server.RemoteEventScripts.AccountPerformsData.Registration.VerificationOnLogin..
+Server: instantiating Server.Houses.HouseCommand..
+Server: instantiating Server.Houses.HouseServerEvents..
+Server: instantiating Server.EventScripts.PlayerEnterVehicle..
+Server: instantiating Server.EventScripts.ResourceStart.Server..
+Server: instantiating Server.EventScripts.PlayerDisconnect.DisconnectedPlayer..
+Server: instantiating Server.ChatSystem.Core..
+Server: instantiating Server.ChatSystem.GlobalChat..
+Server: instantiating Server.CarShowRoom.ServerEvent..
+Server: loading server events.. found 1 server event(s)
+Server: loading server events.. found 3 server event(s)
+Server: loading server events.. found 1 server event(s)
+Server: loading server events.. found 4 server event(s)
+Server: loading server events.. found 1 server event(s)
+Server: loading server events.. found 1 server event(s)
+Server: loading server events.. found 1 server event(s)
+Server: loading server events.. found 1 server event(s)
+Server: loading server events.. found 1 server event(s)
+Server: loading server events.. found 3 server event(s)
+Server: loaded 17 server events(s)
+Server: loading commands.. found 1 command(s)
+Server: loading commands.. found 1 command(s)
+Server: loading commands.. found 1 command(s)
+Server: loading commands.. found 1 command(s)
+Server: loading commands.. found 1 command(s)
+Server: loading commands.. found 1 command(s)
+Server: loading commands.. found 1 command(s)
+Server: loading commands.. found 1 command(s)
+Server: loading commands.. found 1 command(s)
+Server: loading commands.. found 1 command(s)
+Server: loading commands.. found 1 command(s)
+Server: loaded 11 commands(s)
+Server: loading remote events.. found 1 remote event(s)
+Server: loading remote events.. found 1 remote event(s)
+Server: loading remote events.. found 1 remote event(s)
+Server: loading remote events.. found 1 remote event(s)
+Server: loading remote events.. found 1 remote event(s)
+Server: loading remote events.. found 1 remote event(s)
+Server: loading remote events.. found 1 remote event(s)
+Server: loading remote events.. found 2 remote event(s)
+Server: loading remote events.. found 3 remote event(s)
+Server: loaded 12 remote event(s)
+Велопарк в количестве 12 штук успешно загружен.
+1 домов загружено
+System.Collections.Generic.List`1[GTANetworkAPI.ColShape]
+Подключение к базе данных выполненоInitializing Bootstrapper.dll (1.1.0.0)..
+-> SERVER STARTED AT 17.08.2023 14:29:27
+Unable to load acl.xml
+Loaded 667 entries from vehicleData.json
+Loading resources..
+-> Starting Server resource..
+Server: loading scripts.. found 1 script(s)
+Server: instantiating Server.Vehicles.RentBikes.InitRentBikes..
+Server: instantiating Server.Vehicles.RentBikes.RentBikeCommand..
+Server: instantiating Server.Vehicles.RentBikes.RentBikeEvent..
+Server: instantiating Server.Vehicles.PersonalVehicles.CommandParkVehicle..
+Server: instantiating Server.Vehicles.PersonalVehicles.PlayerEnterPersonalVehicle..
+Server: instantiating Server.ServerCommands.Car..
+Server: instantiating Server.ServerCommands.DataTest..
+Server: instantiating Server.ServerCommands.GetPos..
+Server: instantiating Server.ServerCommands.GiveMoney..
+Server: instantiating Server.ServerCommands.PersonCar..
+Server: instantiating Server.ServerCommands.PlayerPos..
+Server: instantiating Server.ServerCommands.TestPed..
+Server: instantiating Server.ServerCommands.WeaponCommand..
+Server: instantiating Server.RemoteEventScripts.CreateWaypoint..
+Server: instantiating Server.RemoteEventScripts.Pos..
+Server: instantiating Server.RemoteEventScripts.AccountPerformsData.Registration.AccountEvent..
+Server: instantiating Server.RemoteEventScripts.AccountPerformsData.Registration.CheckAccount..
+Server: instantiating Server.RemoteEventScripts.AccountPerformsData.Registration.ClientSkin..
+Server: instantiating Server.RemoteEventScripts.AccountPerformsData.Registration.VerificationEmail..
+Server: instantiating Server.RemoteEventScripts.AccountPerformsData.Registration.VerificationOnLogin..
+Server: instantiating Server.Houses.HouseCommand..
+Server: instantiating Server.Houses.HouseServerEvents..
+Server: instantiating Server.EventScripts.PlayerEnterVehicle..
+Server: instantiating Server.EventScripts.ResourceStart.Server..
+Server: instantiating Server.EventScripts.PlayerDisconnect.DisconnectedPlayer..
+Server: instantiating Server.ChatSystem.Core..
+Server: instantiating Server.ChatSystem.GlobalChat..
+Server: instantiating Server.CarShowRoom.ServerEvent..
+Server: loading server events.. found 1 server event(s)
+Server: loading server events.. found 3 server event(s)
+Server: loading server events.. found 1 server event(s)
+Server: loading server events.. found 4 server event(s)
+Server: loading server events.. found 1 server event(s)
+Server: loading server events.. found 1 server event(s)
+Server: loading server events.. found 1 server event(s)
+Server: loading server events.. found 1 server event(s)
+Server: loading server events.. found 1 server event(s)
+Server: loading server events.. found 3 server event(s)
+Server: loaded 17 server events(s)
+Server: loading commands.. found 1 command(s)
+Server: loading commands.. found 1 command(s)
+Server: loading commands.. found 1 command(s)
+Server: loading commands.. found 1 command(s)
+Server: loading commands.. found 1 command(s)
+Server: loading commands.. found 1 command(s)
+Server: loading commands.. found 1 command(s)
+Server: loading commands.. found 1 command(s)
+Server: loading commands.. found 1 command(s)
+Server: loading commands.. found 1 command(s)
+Server: loading commands.. found 1 command(s)
+Server: loaded 11 commands(s)
+Server: loading remote events.. found 1 remote event(s)
+Server: loading remote events.. found 1 remote event(s)
+Server: loading remote events.. found 1 remote event(s)
+Server: loading remote events.. found 1 remote event(s)
+Server: loading remote events.. found 1 remote event(s)
+Server: loading remote events.. found 1 remote event(s)
+Server: loading remote events.. found 1 remote event(s)
+Server: loading remote events.. found 2 remote event(s)
+Server: loading remote events.. found 3 remote event(s)
+Server: loaded 12 remote event(s)
+Велопарк в количестве 12 штук успешно загружен.
+1 домов загружено
+Подключение к базе данных выполнено успешно
+Уличный автосалон загрInitializing Bootstrapper.dll (1.1.0.0)..
+-> SERVER STARTED AT 17.08.2023 14:30:04
+Unable to load acl.xml
+Loaded 667 entries from vehicleData.json
+Loading resources..
+-> Starting Server resource..
+Server: loading scripts.. found 1 script(s)
+Server: instantiating Server.Vehicles.RentBikes.InitRentBikes..
+Server: instantiating Server.Vehicles.RentBikes.RentBikeCommand..
+Server: instantiating Server.Vehicles.RentBikes.RentBikeEvent..
+Server: instantiating Server.Vehicles.PersonalVehicles.CommandParkVehicle..
+Server: instantiating Server.Vehicles.PersonalVehicles.PlayerEnterPersonalVehicle..
+Server: instantiating Server.ServerCommands.Car..
+Server: instantiating Server.ServerCommands.DataTest..
+Server: instantiating Server.ServerCommands.GetPos..
+Server: instantiating Server.ServerCommands.GiveMoney..
+Server: instantiating Server.ServerCommands.PersonCar..
+Server: instantiating Server.ServerCommands.PlayerPos..
+Server: instantiating Server.ServerCommands.TestPed..
+Server: instantiating Server.ServerCommands.WeaponCommand..
+Server: instantiating Server.RemoteEventScripts.CreateWaypoint..
+Server: instantiating Server.RemoteEventScripts.Pos..
+Server: instantiating Server.RemoteEventScripts.AccountPerformsData.Registration.AccountEvent..
+Server: instantiating Server.RemoteEventScripts.AccountPerformsData.Registration.CheckAccount..
+Server: instantiating Server.RemoteEventScripts.AccountPerformsData.Registration.ClientSkin..
+Server: instantiating Server.RemoteEventScripts.AccountPerformsData.Registration.VerificationEmail..
+Server: instantiating Server.RemoteEventScripts.AccountPerformsData.Registration.VerificationOnLogin..
+Server: instantiating Server.Houses.HouseCommand..
+Server: instantiating Server.Houses.HouseServerEvents..
+Server: instantiating Server.EventScripts.PlayerEnterVehicle..
+Server: instantiating Server.EventScripts.ResourceStart.Server..
+Server: instantiating Server.EventScripts.PlayerDisconnect.DisconnectedPlayer..
+Server: instantiating Server.ChatSystem.Core..
+Server: instantiating Server.ChatSystem.GlobalChat..
+Server: instantiating Server.CarShowRoom.ServerEvent..
+Server: loading server events.. found 1 server event(s)
+Server: loading server events.. found 3 server event(s)
+Server: loading server events.. found 1 server event(s)
+Server: loading server events.. found 4 server event(s)
+Server: loading server events.. found 1 server event(s)
+Server: loading server events.. found 1 server event(s)
+Server: loading server events.. found 1 server event(s)
+Server: loading server events.. found 1 server event(s)
+Server: loading server events.. found 1 server event(s)
+Server: loading server events.. found 3 server event(s)
+Server: loaded 17 server events(s)
+Server: loading commands.. found 1 command(s)
+Server: loading commands.. found 1 command(s)
+Server: loading commands.. found 1 command(s)
+Server: loading commands.. found 1 command(s)
+Server: loading commands.. found 1 command(s)
+Server: loading commands.. found 1 command(s)
+Server: loading commands.. found 1 command(s)
+Server: loading commands.. found 1 command(s)
+Server: loading commands.. found 1 command(s)
+Server: loading commands.. found 1 command(s)
+Server: loading commands.. found 1 command(s)
+Server: loaded 11 commands(s)
+Server: loading remote events.. found 1 remote event(s)
+Server: loading remote events.. found 1 remote event(s)
+Server: loading remote events.. found 1 remote event(s)
+Server: loading remote events.. found 1 remote event(s)
+Server: loading remote events.. found 1 remote event(s)
+Server: loading remote events.. found 1 remote event(s)
+Server: loading remote events.. found 1 remote event(s)
+Server: loading remote events.. found 2 remote event(s)
+Server: loading remote events.. found 3 remote event(s)
+Server: loaded 12 remote event(s)
+Велопарк в количестве 12 штук успешно загружен.
+1 домов загружено
+Подключение к базе данных выполнено успешно
+Уличный автосалон загр

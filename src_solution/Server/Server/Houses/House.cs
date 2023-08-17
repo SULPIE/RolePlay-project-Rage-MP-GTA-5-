@@ -1,4 +1,5 @@
 ﻿using GTANetworkAPI;
+using System.Collections.Generic;
 
 namespace Server.Houses
 {
@@ -20,6 +21,8 @@ namespace Server.Houses
         private Marker _marker_enter;
         private Marker _marker_exit;
 
+        private List<string> _tenants = new List<string>();
+
         public ColShape ColShapeEnter { get { return _colshape_enter; } }
         public ColShape ColShapeExit { get { return _colshape_exit; } }
         public Vector3 PlayerPositionInInterior { get { return _interior_position; } }
@@ -29,6 +32,7 @@ namespace Server.Houses
         public int Cost { get { return _cost; } }
         public Vector3 PickupPosition { get { return _pickup_position; } }
         public string Owner { get { return _owner; } set { _owner = value; } }
+        public List<string> Tenants { get { return _tenants; } set { _tenants = value; } }
 
         public void Init(int house_id, int house_type, Vector3 pickup_position, Vector3 interior_position, Vector3 exit_pickup_position, int dimension, int cost, string owner)
         {

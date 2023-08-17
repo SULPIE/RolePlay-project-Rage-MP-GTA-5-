@@ -9,7 +9,7 @@ namespace Server.Houses
         [ServerEvent(Event.ResourceStart)]
         public async Task InitHouses()
         {
-            await LoadHousesFromDB.Start();
+            LoadHousesFromDB.Start();
         }
 
         [ServerEvent(Event.PlayerEnterColshape)]

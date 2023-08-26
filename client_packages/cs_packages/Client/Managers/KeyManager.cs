@@ -15,6 +15,8 @@ namespace Client.Managers
         public const int KeyUp = 0x26;
         public const int KeyDown = 0x28;
         public const int KeyEnter = 0x0D;
+        public const int KeyK = 0x4B;
+        public const int KeyL = 0x4C;
 
         public static void KeyBind(int key, Action action)
         {

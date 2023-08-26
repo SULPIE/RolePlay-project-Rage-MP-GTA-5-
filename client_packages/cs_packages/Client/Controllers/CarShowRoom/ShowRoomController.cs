@@ -21,6 +21,18 @@ namespace Client.Controllers.CarShowRoom
             Events.Add("SERVER:CLIENT::DRAW_SHOWROOM_UI", InitShowRoom);
             Events.Add("SERVER:CLIENT::REFRESH_UI", RefreshUI);
             Events.Add("SERVER:CLIENT::PLAYER_BOUGHT_CAR", RemoveShowRoom);
+            Events.Add("SERVER:CLIENT::DOWNLOAD_PROP_INTERIOR", DownLoadProps);
+            Events.Add("SERVER:CLIENT::UNLOAD_PROP_INTERIOR", UnloadProps);
+        }
+
+        private void UnloadProps(object[] args)
+        {
+            CarShowRoomInteriorProps.UnloadProps((int)args[0]);
+        }
+
+        private void DownLoadProps(object[] args)
+        {
+            CarShowRoomInteriorProps.DownLoadProps((int)args[0]);
         }
 
         private void RemoveShowRoom(object[] args)
@@ -71,6 +83,7 @@ namespace Client.Controllers.CarShowRoom
             Events.CallRemote("CLIENT:SERVER::CLICK_BUTTON_CONFIRM", _current_car_counter, _current_car_color, _max_color);
 
             Events.Add("SERVER:CLIENT::NOT_ENOUGH_MONEY_HANDLER", OnButtonCancelClick);
+            Events.Add("SERVER:CLIENT::PLAYER_HAS_THE_AUTO", OnButtonCancelClick);
 
             _is_user_pressed_confirm_button = true;
         }
@@ -103,7 +116,7 @@ namespace Client.Controllers.CarShowRoom
                 Events.CallRemote("CLIENT:SERVER::ON_BUTTON_CHANGE_CAR_CLICK", _current_car_counter);
             });
 
-            KeyManager.KeyBind(KeyManager.KeyUp, () =>
+            KeyManager.KeyBind(KeyManager.KeyK, () =>
             {
                 if (_current_car_color == _max_color) { return; }
                 _current_car_color++;
@@ -111,7 +124,7 @@ namespace Client.Controllers.CarShowRoom
                 Events.CallRemote("CLIENT:SERVER::ON_CHANGE_COLOR", _current_car_color);
             });
 
-            KeyManager.KeyBind(KeyManager.KeyDown, () =>
+            KeyManager.KeyBind(KeyManager.KeyL, () =>
             {
                 if (_current_car_color == 0) { return; }
                 _current_car_color--;

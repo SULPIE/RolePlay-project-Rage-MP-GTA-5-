@@ -1,0 +1,1 @@
+require("/chat/index.js");

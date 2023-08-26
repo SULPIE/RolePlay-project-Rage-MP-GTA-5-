@@ -1,4 +1,5 @@
 ﻿using Client.Controllers.CarShowRoom;
+using Client.Controllers.Houses;
 using Client.Controllers.MainUI;
 using Client.Controllers.PlayerStateController;
 using Client.Managers;
@@ -39,6 +40,7 @@ namespace Client.Controllers.Registration
             MainUIController mainUIController = new MainUIController();
             ShowRoomController showRoomController = new ShowRoomController();
             SoundManager soundManager = new SoundManager();
+            HouseTenantsController houseTenantsController = new HouseTenantsController();
         }
 
         private void OnUserTypeInvalidData(object[] args)

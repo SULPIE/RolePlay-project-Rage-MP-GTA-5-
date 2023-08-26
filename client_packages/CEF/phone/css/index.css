@@ -1,0 +1,264 @@
+*
+{
+    margin: 0;
+    padding: 0%;
+    user-select: none;
+}
+
+@font-face 
+{
+    font-family: "gta";
+    src: url("../fonts/gta.ttf");
+}
+
+@font-face 
+{
+    font-family: "hero";
+    src: url("../fonts/hero.ttf");
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 1vh;
+    border-radius: 3vh;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background:fixed;
+    border-radius: 3vh;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #FF8000;
+    border-radius: 3vh;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #FF8000;
+}
+
+
+.phone-container
+{
+    display: flex;
+    position: absolute;
+    right: 3vw;
+    bottom: 3vh;
+    width: 14vw;
+    height: 50vh;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2vh;
+    background: linear-gradient(#2F4F4F, #21382d);
+}
+
+.img_hone 
+{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.header
+{
+    position: absolute;
+    height: 5vh;
+    width: 100%;
+    margin-bottom: 45vh;
+    background: linear-gradient(#000, #1C1C1C);
+    border-radius: 2vh 2vh 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bottom_frame
+{
+    position: absolute;
+    height: 5vh;
+    width: 100%;
+    margin-top: 45vh;
+    background: linear-gradient(#000, #1C1C1C);
+    border-radius: 0 0 2vh 2vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cam
+{
+    background-color:black;
+    clip-path: circle(50%);
+    width: 0.5vw;
+    height: 0.5vw;
+}
+
+.left_frame
+{
+    position: absolute;
+    height: 80%;
+    width: 0.6vw;
+    margin-right: 94.4%;
+    background: linear-gradient(#1C1C1C, #000);
+}
+
+.right_frame
+{
+    position: absolute;
+    height: 80%;
+    width: 0.6vw;
+    margin-left: 94.4%;
+    background: linear-gradient(#1C1C1C, #000);
+}
+
+.content
+{
+    position: absolute;
+    height: 40vh;
+    width: 12.8vw;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(#006400, #00ff7f);
+}
+
+.click_on_back
+{
+    background-color:#292929;
+    border-radius: 50vh;
+    width: 2.3vw;
+    height: 1.15vw;
+}
+
+.time
+{
+    height: 2.5vh;
+    width: 100%;
+    color: aliceblue;
+    font-family: hero;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2vh;
+}
+
+.house
+{
+    white-space: nowrap;
+    font-size: 1.6vh;
+    font-family: hero;
+    color:black;
+    position: absolute;
+    margin-top: 7.1vh;
+    margin-right: 7.7vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 2.5vw;
+    height: 2vh;
+    text-align: -webkit-center;
+}
+
+.house_img
+{
+    width: 100%;
+}
+
+.house-content
+{
+    visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    background-color:aliceblue;
+    height: 37.5vh;
+    margin-top: 2.5vh;
+    width: 100%;
+}
+
+.tenants-item
+{
+    margin-bottom: 20vh;
+    width: 87%;
+    height: 3vh;
+    color:white;
+    background-color: #292929;
+    font-family: hero;
+    white-space: nowrap;
+    font-size: 2vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.app_header
+{
+    font-family: hero;
+    font-size: 1.8vh;
+    color: #FF8000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 35vh;
+    position: absolute;
+    width: 100%;
+    height: 2.5vh;
+    background-color: #292929;
+}
+
+.tenants-content
+{
+    margin-top: 5vh;
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 32.5vh;
+}
+
+.tenants-list
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-block: scroll;
+    overflow-x: hidden;
+    overflow-y:visible;
+    width: 100%;
+    height: 80%;
+}
+
+.item
+{
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:12vw;
+    margin-bottom: 1vh;
+    background-color: #21382d;
+    border-radius: 3vh;
+    font-family: hero;
+    font-size: 75%;
+    color:#FF8000;
+}
+
+.button_delete
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 25%;
+    position: absolute;
+    width: 50%;
+    height: 3vh;
+    background-color: #2F4F4F;
+    margin-top: 27.5vh;
+    border-radius: 25vh;
+    font-family: hero;
+    color:#FF8000;
+    font-size: 1vw;
+}

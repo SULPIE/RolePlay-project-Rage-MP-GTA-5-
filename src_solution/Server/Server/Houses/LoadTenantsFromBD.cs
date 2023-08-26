@@ -23,9 +23,6 @@ namespace Server.Houses
                 {
                     int houseid = dataTable.Rows[i].Field<int>("houseid");
                     house.Tenants.Add(dataTable.Rows[i].Field<string>("name"));
-                    NAPI.Util.ConsoleOutput("Инициализировано");
-                    NAPI.Util.ConsoleOutput($"{house.Tenants.Count} s ${houseid}");
-
                 }
             }
             catch(Exception e)

@@ -20,6 +20,8 @@ namespace Server.RemoteEventScripts.AccountPerformsData.Registration
                 NAPI.Task.Run(() => {
                     player.SetSkin(vhash);
                     player.Dimension = 0;
+
+                    Utils.IPLs.Load();
                 }, 500);
             }
         }

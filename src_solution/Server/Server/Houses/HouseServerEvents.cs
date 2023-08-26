@@ -7,7 +7,7 @@ namespace Server.Houses
     public class HouseServerEvents : Script
     {
         [ServerEvent(Event.ResourceStart)]
-        public async Task InitHouses()
+        public void InitHouses()
         {
             LoadHousesFromDB.Start();
         }

@@ -5,6 +5,8 @@ namespace Server.car_showroom
 {
     public abstract class CarAutoShowRoom
     {
+        protected int _shorroomid;
+
         protected Vector3 _interior_cord_position = new Vector3();
         protected Vector3 _interior_cord_rotation = new Vector3();
         protected Vector3 _car_position = new Vector3();
@@ -34,6 +36,7 @@ namespace Server.car_showroom
         public Vector3 ExitRotation { get { return _exit_rotation; } }
         public ColShape EnterColshape { get { return colShape; } }
         public ColShape ExitColshape { get { return exitColShape; } }
+        public int Id { get { return _shorroomid; } }
 
         public void Init(string[,] cars, Vector3 interior_cord_position, Vector3 interior_cord_rotation, Vector3 marker_position, Vector3 car_position, Vector3 car_rotation, Vector3 exit_position, Vector3 exit_rotation, Vector3 exit_colshape_pos) 
         {

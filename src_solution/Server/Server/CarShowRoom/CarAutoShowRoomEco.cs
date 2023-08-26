@@ -6,6 +6,8 @@ namespace Server.car_showroom
     {
         public CarAutoShowRoomEco()
         {
+            _shorroomid = 0;
+
             _cars_info = new string[,]
             {
                 {"club", "2000"},

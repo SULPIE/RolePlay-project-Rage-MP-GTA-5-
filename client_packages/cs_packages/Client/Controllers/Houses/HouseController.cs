@@ -3,6 +3,7 @@ using RAGE;
 using RAGE.Ui;
 using System;
 using System.Collections.Generic;
+using System.IO.Pipes;
 
 namespace Client.Controllers.Houses
 {

@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Client.Controllers.CarShowRoom
+﻿namespace Client.Controllers.CarShowRoom
 {
     public static class CarShowRoomInteriorProps
     {
